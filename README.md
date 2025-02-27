@@ -27,10 +27,10 @@ classDiagram
   }
 
   class Account {
-    - int rm
-    - int id
-    - float points
-    - float limit
+    - Number rm
+    - Number id
+    - Number points
+    - Number limit
   }
 
   class Feature {
@@ -39,8 +39,8 @@ classDiagram
   }
     
   class Card {
-    - int cardId
-    - float cardLimit
+    - Number cardId
+    - Number cardLimit
   }
     
   class News {
