@@ -17,12 +17,13 @@ O Figma foi utilizado para a abstração do domínio desta API, sendo útil na a
 ## Diagrama de Classes
 
 ```mermaid
-class User {
-    -String name
-    -Account account
-    -Feature[] features
-    -Card[] card
-    -News[] news
+classDiagram
+  class User {
+    - String name
+    - Account account
+    - Feature[] features
+    - Card[] cards
+    - News[] news
   }
 
   class Account {
@@ -32,23 +33,23 @@ class User {
     - float limit
   }
 
-    class Feature {
-      - String icon
-      - String description
-    }
+  class Feature {
+    - String icon
+    - String description
+  }
     
-    class Card {
-      - int card_id
-      - int card_limit
-    }
+  class Card {
+    - int card_id
+    - int card_limit
+  }
     
-    class News {
-      - String icon
-      - String news_description
-    }
+  class News {
+    - String icon
+    - String news_description
+  }
 
-    User "1" *-- "1" Account
-    User "1" *-- "N" Feature
-    User "1" *-- "N*" Card
-    User "1" *-- "N*" News
+  User "1" *-- "1" Account
+  User "1" *-- "0..*" Feature
+  User "1" *-- "0..*" Card
+  User "1" *-- "0..*" News
 ```
