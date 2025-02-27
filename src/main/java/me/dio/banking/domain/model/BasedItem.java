@@ -1,4 +1,4 @@
-package me.dio.banking_domain.domain.model;
+package me.dio.banking.domain.model;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

@@ -1,4 +1,4 @@
-package me.dio.banking_domain;
+package me.dio.banking;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

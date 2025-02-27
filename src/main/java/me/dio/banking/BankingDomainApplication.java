@@ -1,4 +1,4 @@
-package me.dio.banking_domain;
+package me.dio.banking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

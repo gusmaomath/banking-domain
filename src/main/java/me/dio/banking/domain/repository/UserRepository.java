@@ -1,6 +1,6 @@
-package me.dio.banking_domain.domain.repository;
+package me.dio.banking.domain.repository;
 
-import me.dio.banking_domain.domain.model.User;
+import me.dio.banking.domain.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
