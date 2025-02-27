@@ -21,7 +21,7 @@ class User {
     -String name
     -Account account
     -Feature[] features
-    -Card card
+    -Card[] card
     -News[] news
   }
 
