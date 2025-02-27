@@ -17,15 +17,21 @@ O Figma foi utilizado para a abstração do domínio desta API, sendo útil na a
 ## Diagrama de Classes
 
 ```mermaid
-classDiagram
-    class User {
-      - String name
-      - int rm
-      - int id
-      - float points
-      - float limit
-    }
-    
+class User {
+    -String name
+    -Account account
+    -Feature[] features
+    -Card card
+    -News[] news
+  }
+
+  class Account {
+    - int rm
+    - int id
+    - float points
+    - float limit
+  }
+
     class Feature {
       - String icon
       - String description
@@ -41,15 +47,8 @@ classDiagram
       - String news_description
     }
 
-    class PointsBank {
-      - User user
-      - List~Feature~ features
-      - List~Card~ cards
-      - List~News~ news
-    }
-    
-    PointsBank --> User
-    PointsBank --> Feature
-    PointsBank --> Card
-    PointsBank --> News
+    User "1" *-- "1" Account
+    User "1" *-- "N" Feature
+    User "1" *-- "N*" Card
+    User "1" *-- "N*" News
 ```
