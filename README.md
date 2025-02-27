@@ -40,7 +40,7 @@ classDiagram
     
   class Card {
     - int cardId
-    - int cardLimit
+    - float cardLimit
   }
     
   class News {
