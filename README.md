@@ -14,7 +14,9 @@ Java RESTful API criada para a Avanade Decola Tech 2025.
 
 O Figma foi utilizado para a abstração do domínio desta API, sendo útil na análise e projeto da solução.
 
-`````mermaid
+## Diagrama de Classes
+
+```mermaid
 classDiagram
     class User {
       - String name
@@ -50,4 +52,4 @@ classDiagram
     PointsBank --> Feature
     PointsBank --> Card
     PointsBank --> News
-````
+```
