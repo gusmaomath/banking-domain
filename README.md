@@ -39,13 +39,13 @@ classDiagram
   }
     
   class Card {
-    - int card_id
-    - int card_limit
+    - int cardId
+    - int cardLimit
   }
     
   class News {
     - String icon
-    - String news_description
+    - String newsDescription
   }
 
   User "1" *-- "1" Account
