@@ -20,10 +20,10 @@ O Figma foi utilizado para a abstração do domínio desta API, sendo útil na a
 classDiagram
     class User {
       - String name
-      - String rm
-      - String id
-      - int points
-      - int limit
+      - int rm
+      - int id
+      - float points
+      - float limit
     }
     
     class Feature {
