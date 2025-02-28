@@ -9,7 +9,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long userId;
+    private long Id;
 
     private String name;
 
@@ -26,11 +26,11 @@ public class User {
     private List<News> news;
 
     public long getUserId() {
-        return userId;
+        return Id;
     }
 
     public void setUserId(long userId) {
-        this.userId = userId;
+        this.Id = userId;
     }
 
     public String getName() {
